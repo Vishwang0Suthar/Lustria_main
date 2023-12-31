@@ -1,0 +1,49 @@
+
+Link{
+    @apply flex items-center gap-2 p-2 duration-300 hover:translate-y-[-3px] border-b-[#fefefe] border-b-2 hover:border-b-[#7fa15a] 
+
+}
+
+.link {
+
+    /* padding: 2%; */
+    transition: all 0.3s ease;
+    /* color: antiquewhite; */
+    /* font-size: 14px; */
+    /* align-items: center; */
+    letter-spacing: 2px;
+    /* height: 10%; */
+    /* width: 100%; */
+    white-space: nowrap;
+    display: inline-flex;
+    position: relative;
+    /* Ensure the li itself is positioned relative */
+    &:hover {
+        color: #7fa15a;
+        /* cursor: none; */
+        scale: 1.05;
+    }
+    &::before,
+    &::after {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        transform-origin: center;
+    }
+    &::before {
+        border-bottom: 0.2em solid #7fa15a;
+        /* Replace with your desired border color */
+        transform: scale3d(0, 1, 1);
+        transition: transform 650ms ease-in-out;
+    }
+    &:hover::before,
+    &:hover::after {
+        transform: scale3d(1, 1, 1);
+        transition: transform 650ms;
+    }
+}

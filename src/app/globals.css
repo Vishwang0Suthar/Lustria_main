@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Lexend+Zetta:wght@300&family=Montserrat:wght@700&family=Raleway&display=swap');
+body{
+	::selection {
+        color: #fefefe;
+        background-color: #7ea15b;
+    }
+    font-family: 'Raleway',
+    sans-serif;
+}
+@layer base {
+	header,
+	footer,
+	section {
+		@apply px-container;
+	}
+}
+
+
+/* For Webkit browsers (e.g., Chrome, Safari) */
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #4f4f4f;
+    /* Color of the thumb */
+    border-radius: 5px;
+    /* Radius of the thumb */
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: #ddd;
+    /* Color of the track */
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #4f4f4f #ddd;
+    /* Thumb and track colors */
+}

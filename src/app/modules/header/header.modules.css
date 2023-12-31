@@ -1,0 +1,3 @@
+.header {
+    @apply  flex items-center justify-center lg:justify-evenly lg:gap-0 md:gap-[4.5rem] top-8 py-6;
+}

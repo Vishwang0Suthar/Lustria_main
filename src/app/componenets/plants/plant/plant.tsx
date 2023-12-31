@@ -4,7 +4,8 @@ import Opt from '../opt';
 import { IoShuffleOutline } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
 
-type Props = { children: ReactNode };
+type Props = { children: ReactNode
+ };
 
 const Plant = ({ children }: Props) => {
   const Array = React.Children.toArray(children);

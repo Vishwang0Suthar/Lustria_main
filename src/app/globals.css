@@ -2,20 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Afacad&family=Lexend+Zetta:wght@300&family=Montserrat:wght@700&family=Raleway&display=swap');
-body{
-	::selection {
+body {
+    ::selection {
         color: #fefefe;
         background-color: #7ea15b;
     }
     font-family: 'Raleway',
     sans-serif;
 }
+
 @layer base {
-	header,
-	footer,
-	section {
-		@apply px-container;
-	}
+    header,
+    footer,
+    section {
+        @apply px-container;
+    }
 }
 
 

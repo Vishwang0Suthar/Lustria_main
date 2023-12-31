@@ -2,7 +2,8 @@ import React from 'react'
 
 type Props = {}
 
-const Demo = (props: Props) => {
+export default async function Demo() {
+  
   return (
     <div>
       
@@ -10,4 +11,3 @@ const Demo = (props: Props) => {
   )
 }
 
-export default Demo

@@ -10,7 +10,7 @@ import Links from '@/app/componenets/link/link';
 import Icons from '@/app/componenets/icons/icons';
 import CartHover from '../cart-hover/cartHover';
 import Authbuttons from '../authentication/authbuttons';
-import  './header.modules.css'
+import  '../header/header.modules.css'
 type Props = {}
 
 const Header = (props: Props) => {

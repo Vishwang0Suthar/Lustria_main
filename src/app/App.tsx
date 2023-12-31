@@ -14,6 +14,7 @@ import Slid from './modules/carousel/testi2'
 import Slide from './modules/swiper/slide'
 import Demo from './demo/page'
 import Greentext from './componenets/gtext/gtextt/gtextt'
+import Plantslide from './componenets/plants/plantslide'
 
 type Props = {}
 
@@ -22,7 +23,8 @@ const App = (props: Props) => {
     <div className='flex flex-col'>
         <Banner/>
         <Newarrival/>
-        {/* <Plants/> */}
+        {/* <Plants/>
+        <Plantslide/> */}
         <Slide/>
         <Imagecategory/>
         <Gtext/>

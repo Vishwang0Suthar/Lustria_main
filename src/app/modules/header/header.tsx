@@ -11,28 +11,27 @@ import Icons from '@/app/componenets/icons/icons';
 import CartHover from '../cart-hover/cartHover';
 import Authbuttons from '../authentication/authbuttons';
 import  '../header/header.modules.css'
+import Hammburger from '../hamm/Hammburger';
 type Props = {}
 
 const Header = (props: Props) => {
+  
   
   return (
     
     <header className="header">
         
-    <div className="justify-start mr-auto lg:hidden ">  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-<path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-</svg>
-</div>
-<Link href='/'> 
-    <Image className='mr-auto' src={logo} width='170' height='115' alt='logo' />
+    <Hammburger/>
+<Link href='/'>  
+    <Image className=' lg:mr-auto ml-auto left-1/2 mr-0 ' src={logo} width='170' height='115' alt='logo' />
     </Link>
-    <nav className=' mx-auto lg:flex gap-6 md:hidden  hidden z-10 items-center'>
+    <nav className=' mx-auto lg:flex gap-4 md:hidden  hidden z-10 items-center'>
     <Links href="/" >
         Home</Links>    
-    <Links href="/shop" >
+    <Links href="/shop">
         
         Shop</Links>
-        <Links href="/account" >
+        <Links href="/demo" >
         
         Categories</Links>
         <Links href="/account" >
@@ -41,7 +40,7 @@ const Header = (props: Props) => {
         
     </nav>
     <Authbuttons/>
-    <div className='flex h-6 gap-3  items-center '>
+    <div className='flex h-6 gap-3 ml-auto items-center '>
             
             <Icons id='search' >  <FontAwesomeIcon   icon={faSearch} /> </Icons>   
             <div className='hidden gap-3 md:hidden lg:flex'>

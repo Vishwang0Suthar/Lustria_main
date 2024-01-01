@@ -7,7 +7,7 @@ type Props = {
 
 const Rounds = ({children,variant, className, ...props}: Props) => {
   return (
-    <div className={clsx('absolute z-50 top-4 left-2 flex flex-col p-2 h-12 aspect-square rounded-full justify-center items-center text-slate-700  ',{
+    <div className={clsx('absolute z-50 top-3 left-8 flex flex-col p-2 h-12 aspect-square rounded-full justify-center items-center text-slate-700  ',{
         'bg-[#F5CC63]': variant==='HOT',
         'bg-[#F0524B]':variant==='SALE',
         [`${className}`]: !!className

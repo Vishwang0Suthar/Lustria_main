@@ -4,6 +4,7 @@ import Slider from 'rc-slider';  //npm install rc-slider
 import 'rc-slider/assets/index.css';
 import Filterbtn from './filterbtn';
 import TagLink from './tags';
+import Lable from '@/app/componenets/shop-label/lable';
 
 const RangeSlider: React.FC = () => {
   const [range, setRange] = React.useState<[number, number]>([20, 80]);
@@ -13,7 +14,7 @@ const RangeSlider: React.FC = () => {
   };
   const calculateMarginTop = (height: number) => `-${height / 3}px`;
   return (
-    <div className="xl:w-64 lg:w-64 md:w-[98dvw] grid gap-2 mt-12   ">
+    <div className=" grid gap-2 mt-12  ">
       <div className='pb-3.5 mb-6 text-2xl  '>
     <label >Filter</label>
     </div>
@@ -24,7 +25,7 @@ const RangeSlider: React.FC = () => {
         max={120}
         step={1}
         value={range}
-        // onChange={handleSliderChange}
+        onChange={handleSliderChange}
         trackStyle={[{ backgroundColor: 'black' }]} 
         handleStyle={[
           { borderColor: 'black', backgroundColor: 'black', width:'12px', height:'12px', marginTop:calculateMarginTop(12)}, // Left handle
@@ -37,7 +38,7 @@ const RangeSlider: React.FC = () => {
         <div>
         <Filterbtn/>
         </div>
-        <div className='lg:grid text-right text-sm mb-2'>
+        <div className=' text-right text-sm mb-2 '>
         <label >Price:<a>$</a> {range[0]} - </label><label ><a>$</a>{range[1]}</label>
         </div>
 

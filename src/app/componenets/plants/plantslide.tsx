@@ -78,9 +78,9 @@ const Plantslide = () => {
 
 
   return (
-    <div className='relative grid xl:grid-cols-4 grid-rows-2 z-0 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:px-40 lg:px-32 md:px-20 px-0 gap-y-12 pb-16 gap-x-12'>
+    <div className='relative grid xl:grid-cols-4 grid-rows-2 z-0 lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-y-12 '>
       {plantData.map((plant) => (
-        <div key={plant.title} className='relative group z-0'>
+        <div key={plant.title} className='relative group z-0 px-5 pb-12'>
           {plant.tag.map((x, i) => <Rounds key={x} variant={x} style={{
             top: i* 55 + 10
           }}>{x}</Rounds>)}
@@ -89,11 +89,12 @@ const Plantslide = () => {
           <div className='relative aspect-square z-0'>
             <Image src={plant.image} alt={plant.title} objectFit='cover' layout='fill' />
           </div>
-          
-          <p className='text-center'>{plant.title}</p>
+          <div className=' pt-4'>
+          <p className='text-center pb-2'>{plant.title}</p>
           <div className="flex justify-center gap-x-2 ">
           <s>{plant.price}</s>
           <p>{plant.originalPrice}</p>
+          </div>
           </div>
         </div>
       ))}

@@ -22,10 +22,11 @@ const App = (props: Props) => {
   return (
     <div className='flex flex-col'>
         <Banner/>
+        <section >
         <Newarrival/>
         {/* <Plants/>
         <Plantslide/> */}
-        <Slide/>
+        <Slide/></section>
         <Imagecategory/>
         <Gtext/>
         <Newcol/>

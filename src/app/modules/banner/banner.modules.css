@@ -15,11 +15,12 @@
 .bg-shimmer-banner {
     background: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent 75%, transparent 100%);
     background-size: 200% 200%;
-    animation: shimmer-1 500ms;
+    animation: shimmer 1s infinite;
+    /* Change 500ms to 1s and make it infinite */
 }
 
 .group:hover .bg-shimmer-banner {
-    animation: shimmer-1-reverse 1.5s forwards;
+    animation: shimmer-reverse .7s forwards;
 }
 
 @keyframes shimmer {

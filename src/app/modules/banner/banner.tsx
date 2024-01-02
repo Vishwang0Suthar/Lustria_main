@@ -13,7 +13,7 @@ const Banner = (props: Props) => {
   return (
     <div className=' grid grid-cols-1 gap-6 justify-self-center mx-5  lg:grid-cols-2 lg:mx-8 '>
         <div className='relative row-span-2'> 
-        <Image alt='banner'  className='select-none' src={s1} />
+        {/* <Image alt='banner'  className='select-none' src={s1} />
         <div className="absolute text-sm md:flex bottom-5 hidden left-8">
             <p className="px-6">Plants</p>
             <p className="px-6 border-l-[1px] border-black">Terrasium</p>
@@ -23,7 +23,7 @@ const Banner = (props: Props) => {
             <p className="pt-5">01</p>
             <Image className='px-2' src={slash} alt='divider' />
             <p className="pb-5">03</p>
-        </div>
+        </div> */}
         </div>
         <div className='relative group overflow-hidden'> 
         <Image className=' select-none group-hover:scale-105 transition-all' alt='banner' src={b2} />

@@ -1,12 +1,12 @@
 .swiper {
-    width: 98dvw;
+    width: 100%;
     height: auto;
 }
 
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    display: flex;
+    display: block ;
     justify-content: center;
     align-items: center;
 }

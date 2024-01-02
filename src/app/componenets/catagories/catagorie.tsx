@@ -1,15 +1,14 @@
 import React from 'react'
 import Categories from '../catagories/catagories'
 import RangeSlider from '@/app/modules/shop/rangeslider'
+import Lable from '../shop-label/lable'
 type Props = {}
 
 const Cate = (props: Props) => {
   return (
     <div>
-       <div className='pb-3.5 mb-6 lg:px-0 px-5 text-2xl  '>
-    <label >Categories</label>
-    </div>
-    <div>
+       <Lable>Categories</Lable>
+    <div className='flex flex-col gap-y-8'>
                 <Categories count='8' >House Plants </Categories>
                 <Categories count='4' >Potter Plants </Categories>
                 <Categories count='1' >Seeds </Categories>

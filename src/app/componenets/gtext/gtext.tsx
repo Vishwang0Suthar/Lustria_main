@@ -6,9 +6,9 @@ type Props = {}
 
 const Gtext = (props: Props) => {
   return (
-    <>
+    <section>
     <Greentext title='Find  your  dream  plants' subtitle='New Summer Collection' ></Greentext>
-    </>
+    </section>
   )
 }
 

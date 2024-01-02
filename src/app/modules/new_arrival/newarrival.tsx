@@ -4,9 +4,9 @@ type Props = {}
 
 const Newarrival = (props: Props) => {
   return (
-    <section>
+    <>
 
-    <div className='mt-20' >
+    <div className='pt-20 pb-20' >
         <ul className=' gap-0 hidden transition-all md:flex lg:flex justify-center transition-all text-4xl px-4 py-4'>
             <li className='border-r px-10'><a href="#" className='text-[#ABABAB] focus:text-black hover:text-black font-bold'>All Plants</a></li>
             <li className='border-l border-r px-10'><a href="#" className='text-[#ABABAB] focus:text-black hover:text-black font-bold'>New Arrival</a></li>
@@ -29,7 +29,7 @@ const Newarrival = (props: Props) => {
       </select></li>
       </ul>
     </div>
-    </section>
+    </>
   )
 }
 

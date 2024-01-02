@@ -1,11 +1,10 @@
+import Lable from '@/app/componenets/shop-label/lable';
 import React from 'react';
 
 const TagLink: React.FC = () => {
   return (
     <div className='container mt-12'>
-        <div className='pb-3.5 mb-6 text-2xl   '>
-    <label >Tags</label>
-    </div>
+        <Lable>Tags</Lable>
     <div className='tags flex flex-wrap '>
 
     <a

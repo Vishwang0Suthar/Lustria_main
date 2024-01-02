@@ -12,6 +12,7 @@ import '../swiper/slide.components.css'
 // import required modules
 import { FreeMode, Pagination } from 'swiper/modules';
 import Plants from '@/app/componenets/plants/plants';
+import Plantslide from '@/app/componenets/plants/plantslide';
 // import Plantslide from '../plants/plantslide';
 
 type Props = {}
@@ -24,7 +25,7 @@ const Slide = (props: Props) => {
            <Plants/>
         </SwiperSlide>
         <SwiperSlide>
-            <Plants/>
+            <Plantslide/>
 
         </SwiperSlide>
        

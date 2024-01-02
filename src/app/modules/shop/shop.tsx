@@ -23,8 +23,11 @@ import Slidermod from './slidermod'
 import Cate from '@/app/componenets/catagories/catagorie';
 import Rounds from '@/app/componenets/rounds/rounds';
 import Option from '@/app/componenets/option/opt';
+import TitleBanner from '@/app/componenets/titleBanner/TitleBanner';
 // import Rounds from '../round/rounds';
 // import Option from '../option/opt';
+
+type Props = {}
 
 const plantData = [
   {
@@ -145,17 +148,6 @@ const plantData = [
 const Shop = (props: Props) => {
   return (
     <section>
-      <div className="flex flex-wrap justify-around items-center text=[#f9f9f9]  ">
-        <div className='flex flex-wrap w-full justify-between px-4 py-14'>
-          <h1 className='flex flex-wrap text-[55px] font-bold '>Shop</h1>
-          <ul className='flex flex-wrap gap-4 items-center '>
-            <li>Home</li>
-            <li> &#62; </li>
-            <li>Small Plats</li>
-
-          </ul>
-        </div>
-      </div>
       <div className=' flex justify-center pt-24 lg:flex-row xl:flex-row md:flex-col-reverse sm:flex-col-reverse flex-col-reverse overflow-hidden   '>
         <div className=' lg:w-[27dvw]  flex flex-col md:min-w-60 md:mx-auto lg:mx-0 xl:mx-0 px-4 '>
           {/* <span><h4 className='text-xl'>Catagories</h4></span> */}

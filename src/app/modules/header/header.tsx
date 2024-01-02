@@ -48,7 +48,7 @@ const Header = (props: Props) => {
             <div className="group relative">
             <Icons id='cart' >  <FontAwesomeIcon  icon={faCartShopping} />    </Icons>
 
-<div className="hidden  z-20 right-0 w-[25vw] shadow-lg group-hover:block absolute bg-white  p-2">
+<div className="dropdown hidden  z-20 right-0 w-[25vw] shadow-lg group-hover:block absolute bg-white  ">
 {/* <!-- Dropdown content goes here --> */}
 <CartHover/>
 </div>

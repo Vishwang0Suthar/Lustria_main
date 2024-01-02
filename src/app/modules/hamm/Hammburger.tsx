@@ -1,28 +1,52 @@
 "use client"
+import Links from '@/app/componenets/link/link';
+import Sidenavops from '@/app/componenets/sidenav/sidenav-ops';
+import { faDotCircle } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// Import necessary modules and types
+// import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
-import React from 'react'
-import { useState } from 'react';
-
-type Props = {}
 
 const Hammburger = (props: Props) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
-    const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-    const openMenu = () => {
-      setMenuOpen(true);
-    };
-  
-    const closeMenu = () => {
-      setMenuOpen(false);
-    };
-  
+
+
   return (
-    <><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-</svg></>
+    <>
+      <div className={`menu-button ${menuOpen ? 'cross' : ''}`} onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+     
+      <div className="flex">
+      <div className={`menu-container ${menuOpen ? 'open' : ''}`}>
+        
+          <ul className="flex flex-col gap-4 p-4 ">
+          <Sidenavops href="/">Home</Sidenavops>
+          <hr className='bg-gray-700 h-[1px] appearance-none border-none ' />
 
-  )
-}
+          <Sidenavops href="/shop"  >Shop</Sidenavops>
+          <hr className='bg-gray-700 h-[1px] appearance-none border-none ' />
 
-export default Hammburger
+          <Sidenavops href="/cart"  >Home</Sidenavops>
+          <hr className='bg-gray-700 h-[1px] appearance-none border-none ' />
+
+          <Sidenavops href="/categories" >Home</Sidenavops>
+        </ul>
+        </div>
+        <div className={` ${menuOpen ? 'overlay' : ''}`} onClick={toggleMenu} ></div>
+
+      </div>
+    </>
+  );
+};
+
+export default Hammburger;

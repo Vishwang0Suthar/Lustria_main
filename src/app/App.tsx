@@ -15,6 +15,7 @@ import Slide from './modules/swiper/slide'
 import Demo from './demo/page'
 import Greentext from './componenets/gtext/gtextt/gtextt'
 import Plantslide from './componenets/plants/plantslide'
+import Checkoutkart from './modules/checkoutkart/checkoutkart'
 
 type Props = {}
 
@@ -39,6 +40,7 @@ const App = (props: Props) => {
     <Greentext title='Welcome to Lustria' subtitle='Testimonials' />
     <Slid/>    
     <Demo/>
+    <Checkoutkart/>
     </div>
   )
 }

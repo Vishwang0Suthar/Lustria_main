@@ -34,7 +34,7 @@ const App = (props: Props) => {
     <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
     </svg>
     <p> Shop All Plants</p></CommonButton>
-    <Breaker/>
+    <Breaker id="home"/>
     {/* <Slider/> */}
     <Greentext title='Welcome to Lustria' subtitle='Testimonials' />
     <Slid/>    

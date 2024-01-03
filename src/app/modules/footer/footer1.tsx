@@ -6,7 +6,7 @@ import Footerdetail from '@/app/componenets/Footercard/footerdetail';
 
 
 
-const Footer = () => {
+const footer1 = () => {
    
 
     return (
@@ -37,4 +37,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default footer1;

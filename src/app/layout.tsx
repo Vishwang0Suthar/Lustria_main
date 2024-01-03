@@ -2,8 +2,10 @@ import type { Metadata } from 'next'
 import { Inter, Raleway } from 'next/font/google'
 import './globals.css'
 import Header from './modules/header/header'
-import Footer from './modules/footer/footer'
-import Footer2 from './modules/Footer2/footer2'
+import Footerblack from './modules/Footerblack/footer'
+
+
+
 
 const inter = Raleway({ subsets: ['latin'] })
 
@@ -23,8 +25,8 @@ export default function RootLayout({
       <body className={` bg-[#fefefe] ${inter.className}`}>
       <Header/>
       {children}
-      <Footer/>
-      <Footer2/>
+      <Footerblack/>
+      
       </body>
     </html>
   )

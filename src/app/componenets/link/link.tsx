@@ -15,7 +15,7 @@ function Links({children, href}: Props) {
     <Link
 		href={href}
     	className={ clsx ("link", {
-	    })}> <p className='text-lg text-black'>{children}</p>
+	    })}> <p className='text-lg font-normal text-black'>{children}</p>
         <FontAwesomeIcon className='h-3 transition-transform transform' icon={faChevronDown} />
 	</Link> 
     </>

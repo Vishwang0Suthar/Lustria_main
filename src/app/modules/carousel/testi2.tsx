@@ -21,7 +21,7 @@ import { FreeMode, Pagination } from 'swiper/modules';
 
 export default function Testi2() {
   return (
-    <>
+    <section>
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper flex flex-wrap" freeMode={true} grabCursor={true}
       breakpoints={{
         0: {
@@ -47,7 +47,7 @@ export default function Testi2() {
       }}
       >
         <SwiperSlide>
-            <div className="flex justify-around  p-14">
+            <div className="flex justify-around  p-12 px-5">
           <div className="flex flex-col justify-start">
             <div className="tet">
                 <p className='text-[20px] leading-7 text-[#777] opacity-[0.8] text-left '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint incidunt ex sequi?
@@ -66,7 +66,7 @@ export default function Testi2() {
         </div>
         </div>
         </SwiperSlide>
-        <SwiperSlide><div className="flex justify-around p-14">
+        <SwiperSlide><div className="flex justify-around p-12 px-5">
           <div className="flex flex-col justify-start">
             <div className="tet">
                 <p className='text-[20px] leading-7 text-[#777] opacity-[0.8] text-left '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint incidunt ex sequi?
@@ -86,7 +86,7 @@ export default function Testi2() {
         </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div className="flex justify-around p-14">
+            <div className="flex justify-around p-12 px-5">
           <div className="flex flex-col justify-start">
             <div className="tet">
                 <p className='text-[20px] leading-7 text-[#777] opacity-[0.8] text-left '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint incidunt ex sequi?
@@ -106,7 +106,7 @@ export default function Testi2() {
         </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div className="flex justify-around p-14">
+            <div className="flex justify-around p-12 px-5">
           <div className="flex flex-col justify-start">
             <div className="tet">
                 <p className='text-[20px] leading-7 text-[#777] opacity-[0.8] text-left '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint incidunt ex sequi?
@@ -128,6 +128,6 @@ export default function Testi2() {
     
         
       </Swiper>
-    </>
+    </section>
   );
 }

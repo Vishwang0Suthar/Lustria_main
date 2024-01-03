@@ -4,6 +4,7 @@ import CouponForm from '@/app/componenets/coupenform/coupenForm';
 import Cart1 from '@/app/componenets/tables/Cart1';
 import MobileTable from '@/app/componenets/tables/MobileTable';
 import Table from '@/app/componenets/tables/table';
+import TitleBanner from '@/app/componenets/titleBanner/TitleBanner';
 import React, { useState, useEffect } from 'react';
 
 
@@ -52,7 +53,9 @@ const Checkoutkart: React.FC = () => {
   }, []);
 
   return (
-    <main>
+    <section>
+      <TitleBanner >Kart</TitleBanner>
+
       <div className='flex flex-col  px-10'>
         <div>
         {windowWidth <= 768 && <MobileTable data={data} onRemove={handleRemoveItem} />}
@@ -63,8 +66,8 @@ const Checkoutkart: React.FC = () => {
             <MobileTable data={data} onRemove={handleRemoveItem} />
           </MediaQuery>
           <MediaQuery query="(min-width: 769px)">
-            <Table data={data} onRemove={handleRemoveItem} />
-          </MediaQuery> */}
+          <Table data={data} onRemove={handleRemoveItem} />
+        </MediaQuery> */}
         </div>
 
         <div>
@@ -76,7 +79,8 @@ const Checkoutkart: React.FC = () => {
           <Cart1/>
         </div> */}
       </div>
-    </main>
+  
+        </section>
   );
 };
 

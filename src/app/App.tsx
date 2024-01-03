@@ -40,7 +40,7 @@ const App = (props: Props) => {
     <Greentext title='Welcome to Lustria' subtitle='Testimonials' />
     <Slid/>    
     <Demo/>
-    <Checkoutkart/>
+    {/* <Checkoutkart/> */}
     </div>
   )
 }

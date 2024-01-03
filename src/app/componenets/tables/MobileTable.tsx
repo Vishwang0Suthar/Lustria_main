@@ -64,6 +64,7 @@ const MobileTable: React.FC<MobileTableProps> = ({ data, onRemove }) => {
                 </td>
               </tr>
              
+             
             </React.Fragment>
           ))}
         </tbody>

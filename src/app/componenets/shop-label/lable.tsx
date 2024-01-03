@@ -6,7 +6,7 @@ type Props = {
 
 const Lable = ({children}: Props) => {
   return (
-    <div className='pb-3.5 mb-6 lg:px-0 px-5 text-2xl border-b-2 border-gray-100 '>
+    <div className='pb-3.5 mb-6 lg:px-0  text-2xl border-b-2 border-gray-100 '>
     <label >{children}</label>
     </div>
   )

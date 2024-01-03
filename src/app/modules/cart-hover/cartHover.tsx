@@ -112,10 +112,11 @@ const CartHover = (props: Props) => {
 
         </div>
         <div className='flex flex-col mt-5 gap-5'>
-        
+        <Link href="../kart">
         <CommonButton id="viewcart" >
             <FontAwesomeIcon className='w-5 h-5' icon={faShoppingCart} />
     <p> View Cart</p></CommonButton>  
+    </Link>
     <Link href="../checkout">
     <CommonButton id="checkout">
         <FontAwesomeIcon className='w-5 h-5' icon={faCreditCard} />

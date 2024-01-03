@@ -3,7 +3,7 @@
 }
 
 .menu-button{
-    @apply  z-30  justify-start ml-0 mr-auto lg:hidden flex flex-col gap-[0.22rem] pl-2
+    @apply  z-30  justify-start ml-0 mr-auto pl-2 lg:hidden flex flex-col gap-[0.22rem] 
 }
 
 
@@ -62,7 +62,7 @@
     z-index: 10;
     height: 100%;
     background-color: #23232376;
-    animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.2s ease-in-out;
   }
   
   .menu-container.open {
@@ -154,15 +154,20 @@
     transform: translateY(-6px) rotate(40.5deg);
   }
 
+  .dropdown{
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
     }
-    50%{
-      opacity: 0.5;
-    }
+    
     100% {
       /* left: 50%; */
       opacity: 1;
     }
   }
+
+  

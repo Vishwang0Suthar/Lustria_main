@@ -7,6 +7,10 @@ import Footerblack from './modules/Footerblack/footer'
 
 
 
+import Footer from './modules/footer/footer'
+import FooterWhite from './modules/footer/FooterWhite'
+
+
 const inter = Raleway({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -27,6 +31,9 @@ export default function RootLayout({
       {children}
       <Footerblack/>
       
+
+      
+
       </body>
     </html>
   )

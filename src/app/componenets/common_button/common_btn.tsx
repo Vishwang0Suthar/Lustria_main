@@ -1,14 +1,17 @@
 import React,{ReactNode} from 'react'
 import clsx from "clsx";
+import Link from 'next/link';
 
 
 type Props = {children:ReactNode
-id:String}
+id:String;
+href?:string;
+}
 
-const CommonButton = ({children,id}: Props) => {
+const CommonButton = ({href,children,id}: Props) => {
   return (
-    <div className='container self-center min-w-60 flex justify-center items-center'>
-    <button className={clsx(' py-3 px-10  cursor-pointer flex gap-3 transition-all duration-300 text-center items-center text-lg  ',
+    <div  className='container self-center min-w-60 flex justify-center items-center'>
+    <button  className={clsx(' py-3 px-10  cursor-pointer flex gap-3 transition-all duration-300 text-center items-center text-lg  ',
     {
     'bg-white hover:bg-black border-[1px] hover:text-white border-black justify-center':id==='shopallplants',
     'bg-[#7fa15a] hover:bg-white text-white hover:text-black border-[#7fa15a] ':id==='addtocart',

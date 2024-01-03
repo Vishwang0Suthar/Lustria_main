@@ -10,7 +10,7 @@ type Props = {
 const Hoveritems = ({children}: Props) => {
     const childrenArr = React.Children.toArray(children)
   return (
-    <div className='flex p-4'>
+    <div className='flex flex-col p-4'>
         {childrenArr[0]}
         <div className=" flex p-2  flex-col">
                

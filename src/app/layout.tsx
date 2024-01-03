@@ -3,6 +3,7 @@ import { Inter, Raleway } from 'next/font/google'
 import './globals.css'
 import Header from './modules/header/header'
 import Footer from './modules/footer/footer'
+import Footer2 from './modules/Footer2/footer2'
 
 const inter = Raleway({ subsets: ['latin'] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <Header/>
       {children}
       <Footer/>
+      <Footer2/>
       </body>
     </html>
   )

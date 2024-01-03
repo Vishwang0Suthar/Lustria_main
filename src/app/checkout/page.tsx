@@ -7,7 +7,7 @@ type Props = {}
 const CheckRoute = (props: Props) => {
   return (
     <>
-        <TitleBanner>Checkout</TitleBanner>
+        <TitleBanner children="Checkout"></TitleBanner>
         <CheckOut/>
     </>
     )

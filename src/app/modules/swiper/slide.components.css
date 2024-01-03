@@ -17,6 +17,41 @@
     background: #000;
 } */
 
+.swiper-pagination-bullet{
+    
+    /* border-radius: 10%; */
+    background: #9a9a9a;
+    
+    
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        scale: 1.8;
+        border: thin;
+        border: 0.1px solid rgb(0, 235, 0);
+        
+        background: #ffffff;
+   
+
+
+    }
+    
+}
+.swiper-pagination-bullet-active{
+    scale: 2px;
+    &:hover{
+        scale: 1.8;
+        
+        border: 0.1px solid rgb(0, 170, 0);
+        background: #ffffff;
+        
+   
+
+
+    }
+    
+   
+}
+
 .swiper-slide img {
     display: block;
     object-fit: cover;

@@ -1,4 +1,7 @@
+
+
 import React from 'react';
+import clsx from 'clsx'
 
 const images = [
   'https://lustria.g5plus.net/wp-content/uploads/2022/01/72104935_404361396911785_6698094569396402364_n-320x320.jpg',
@@ -13,12 +16,16 @@ const images = [
   'https://lustria.g5plus.net/wp-content/uploads/2022/01/70266283_514652149098545_458846681599063547_n-320x320.jpg',
 ];
 
+type Props = {id:String;}
 
 
-const Breaker: React.FC = () => {
+const Breaker: React.FC<Props> = ({id}:Props) => {
   return (
-    <div className="container flex w-full object-fit max-w-fit  mt-8  bg-black  justify-center">
-      <div className="grid w-full grid-cols-2 md:grid-cols-4 object-fit lg:grid-cols-8 ">
+    <div className="container flex flex-wrap w-full object-fit max-w-fit  mt-8  bg-black  justify-center">
+      <div className={clsx( "grid w-full  object-fit",{
+      'grid-cols-2 md:grid-cols-4  lg:grid-cols-8' :id==='home',
+      'grid-cols-2 md:grid-cols-4' :id==='footer'
+      })}>
         {images.map((imageSrc, index) => (
           <div
             key={index}

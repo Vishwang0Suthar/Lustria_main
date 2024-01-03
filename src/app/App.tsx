@@ -15,9 +15,13 @@ import Slide from './modules/swiper/slide'
 import Demo from './demo/page'
 import Greentext from './componenets/gtext/gtextt/gtextt'
 import Plantslide from './componenets/plants/plantslide'
+
+import Checkoutkart from './modules/checkoutkart/checkoutkart'
+
 import Homeproducts from './modules/Homeproducts/Homeproducts'
 import Newarrivels from './modules/Newproducts/Newproducts'
 import Newproducts from './modules/Newproducts/Newproducts'
+
 
 type Props = {}
 
@@ -27,6 +31,7 @@ const App = (props: Props) => {
         <Banner/>
         <Homeproducts/> 
         <Imagecategory/>
+
         <Newproducts/>
         <CommonButton id="shopallplants"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
 
@@ -38,6 +43,7 @@ const App = (props: Props) => {
     <Greentext title='Welcome to Lustria' subtitle='Testimonials' />
     <Slid/>    
     <Demo/>
+    {/* <Checkoutkart/> */}
     </div>
   )
 }

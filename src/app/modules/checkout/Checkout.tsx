@@ -8,6 +8,7 @@ type Props = {}
 
 function CheckOut({}: Props) {
   return (
+
     <section>
         <TitleBanner>Checkout</TitleBanner>
         <div className='container mx-auto flex flex-col  md:pt-7  w-full '>
@@ -23,6 +24,7 @@ function CheckOut({}: Props) {
                 <ShippingDetail/>
             </div>
         </div>
+
         <div>
             <YourOrder/>
         </div>

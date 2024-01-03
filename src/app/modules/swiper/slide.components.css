@@ -17,6 +17,42 @@
     background: #000;
 } */
 
+.swiper-pagination-bullet{
+    
+    
+    background: #9a9a9a;
+    
+    
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        scale: 1.8;
+        
+        border: 1px solid #7fa15a;
+        
+        background: #ffffff;
+   
+
+
+    }
+    
+}
+.swiper-pagination-bullet-active{
+    scale: 2px;
+    &:hover{
+        scale: 1.8;
+        
+
+        border: 1px solid #7fa15a;
+        background: #ffffff;
+        
+   
+
+
+    }
+    
+   
+}
+
 .swiper-slide img {
     display: block;
     object-fit: cover;

@@ -46,7 +46,7 @@ const plantData = [
   
 ];
 
-const Plants = () => {
+const Newcol = () => {
   // Nested array to store each child's content for each Plant component
 
 
@@ -76,4 +76,4 @@ const Plants = () => {
   );
 };
 
-export default Plants;
+export default Newcol;

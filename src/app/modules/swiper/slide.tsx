@@ -20,7 +20,14 @@ type Props = {}
 const Slide = (props: Props) => {
   return (
     <>
-        <Swiper pagination={true} modules={[Pagination]} className="mySwiper flex flex-wrap" freeMode={true} grabCursor={true}>
+        <Swiper
+        spaceBetween={30}
+        pagination={{
+          clickable: true, 
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
         <SwiperSlide>
            <Plants/>
         </SwiperSlide>

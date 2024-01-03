@@ -19,15 +19,15 @@
 
 .swiper-pagination-bullet{
     
-    /* border-radius: 10%; */
+    
     background: #9a9a9a;
     
     
     transition: all 0.3s ease-in-out;
     &:hover{
         scale: 1.8;
-        border: thin;
-        border: 0.1px solid rgb(0, 235, 0);
+        
+        border: 1px solid #7fa15a;
         
         background: #ffffff;
    
@@ -41,7 +41,8 @@
     &:hover{
         scale: 1.8;
         
-        border: 0.1px solid rgb(0, 170, 0);
+
+        border: 1px solid #7fa15a;
         background: #ffffff;
         
    

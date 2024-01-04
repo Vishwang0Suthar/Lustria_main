@@ -8,7 +8,7 @@ const Navlinks = (props: Props) => {
     <><nav className=" mx-auto lg:flex gap-3 md:hidden  hidden z-10 items-center">
     <Links href="/">Home</Links>
     <Links href="/shop">Shop</Links>
-    <Links href="/demo">Categories</Links>
+    <Links href="/comingsoon">Categories</Links>
     <Links href="/account">About</Links>
   </nav></>
   )

@@ -6,6 +6,7 @@ type Props = {}
 const CheckRoute = (props: Props) => {
   return (
     <>
+
         <CheckOut/>
     </>
     )

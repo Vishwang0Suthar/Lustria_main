@@ -8,6 +8,8 @@ type Props = {}
 
 function CheckOut({}: Props) {
   return (
+
+
     <section>
         <TitleBanner>Checkout</TitleBanner>
         <div className='container mx-auto flex flex-col  md:pt-7  w-full '>
@@ -17,12 +19,14 @@ function CheckOut({}: Props) {
         <p > Have a coupon? <a href="#" className='text-[#7FA15A] hover:underline  '>Click here to enter your code</a></p>
         </div>
 
+
         <div className=''>
             <div className='container flex gap-10  flex-grow xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col w-full  '>
                 <BillingDetail/>
                 <ShippingDetail/>
             </div>
         </div>
+
         <div>
             <YourOrder/>
         </div>

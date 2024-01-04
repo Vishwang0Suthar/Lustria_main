@@ -20,8 +20,15 @@ type Props = {}
 
 const Slideshop = (props: Props) => {
   return (
-    <div className=''>
-        <Swiper pagination={true} modules={[Pagination]} className="mySwiper flex flex-wrap" freeMode={true} grabCursor={true} >
+    <>
+        <Swiper
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
         <SwiperSlide>
            {/* <Plants/> */}
            <Shop/>
@@ -35,7 +42,7 @@ const Slideshop = (props: Props) => {
     
         
       </Swiper>
-    </div>
+    </>
   );
 }
 

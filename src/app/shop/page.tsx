@@ -7,7 +7,7 @@ type Props = {}
 const Shoppg = (props: Props) => {
   return (
     <>
-          <TitleBanner>Shop</TitleBanner>
+        <TitleBanner>Shop</TitleBanner>
 
         <Shop/>
 

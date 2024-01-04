@@ -25,11 +25,11 @@ const Authbuttons: React.FC<AuthButtonsProps> = () => {
 
   return (
     <div className='z-40  '>
-      <div className="hidden lg:flex items-center">
+      <div className="hidden transition-all lg:flex  font-semibold items-center">
         <FontAwesomeIcon icon={faUser}/>
-      <button className=' px-2 text-base hover:text-[#7FA15A]' onClick={handleLoginClick}>Login</button>
-      <span className="text-gray-500">/</span>
-      <button className='px-2 text-base hover:text-[#7FA15A]' onClick={handleRegisterClick}>Register</button>
+      <button className=' px-2 text-base hover:text-[#7FA15A] transition-all duration-500 ' onClick={handleLoginClick}>Login</button>
+      <span className="text-gray-500 font-extralight ">/</span>
+      <button className='px-2 text-base hover:text-[#7FA15A] transition-all duration-500' onClick={handleRegisterClick}>Register</button>
       </div>
       {showLoginBox && <Login onClose={() => setShowLoginBox(false)} />}
       {showRegisterBox && <Register onClose={() => setShowRegisterBox(false)} />}

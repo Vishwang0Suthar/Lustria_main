@@ -136,7 +136,7 @@ const Cart1: React.FC = () => {
           </div>
           <button
             type='button'
-            className='bg-green-500 text-white hover:text-black w-full h-14 hover:bg-white border border-[#7FA15A]'
+            className='bg-[#7fa15a] text-white hover:text-black w-full h-14 hover:bg-white border border-[#7FA15A]'
             >
             Proceed to checkout
           </button>

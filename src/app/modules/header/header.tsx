@@ -23,18 +23,20 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <header className="header sticky scroll-m-3 bg-white top-0 z-50">
+    <header className="header sticky bg-white top-0 z-50">
       <Hammburger />
       <Link href="/">
-        <Image className=" lg:mr-auto lg:pl-5  md:ml-auto left-1/2 mr-0 "
+        <Image
+          className=" lg:mr-auto lg:pl-5  md:ml-auto left-1/2 mr-0 "
           src={logo}
           width="170"
           height="115"
-          alt="logo"/>
+          alt="logo"
+        />
       </Link>
-      <Navlinks/>
+      <Navlinks />
       <Authbuttons />
-      <Navicons/>
+      <Navicons />
     </header>
   );
 };

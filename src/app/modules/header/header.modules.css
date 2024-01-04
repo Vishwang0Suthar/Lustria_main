@@ -7,7 +7,7 @@
 }
 
 .menu-container {
-  @apply lg: hidden z-10 pt-16
+  @apply lg:hidden z-10 pt-16
 }
 
 .bar {

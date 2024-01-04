@@ -1,9 +1,9 @@
 .header {
-  @apply select-none flex items-center justify-center lg: justify-evenly lg: gap-0 md: gap-[4.5rem] top-8 py-6;
+  @apply select-none flex items-center justify-center lg:justify-evenly lg:gap-0 md:gap-[4.5rem] top-8 py-6;
 }
 
 .menu-button {
-  @apply z-30 justify-start ml-0 mr-auto pl-2 lg: hidden flex flex-col gap-[0.22rem]
+  @apply z-30 justify-start ml-0 mr-auto pl-2 lg:hidden flex flex-col gap-[0.22rem]
 }
 
 .menu-container {

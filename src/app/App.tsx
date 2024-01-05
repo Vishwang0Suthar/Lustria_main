@@ -23,22 +23,25 @@ import Homeproducts from "./modules/Homeproducts/Homeproducts";
 import Newarrivels from "./modules/Newproducts/Newproducts";
 import Newproducts from "./modules/Newproducts/Newproducts";
 
+import Image from "next/image";
+// import Photo from "@/public/Cat_images/Category-01.jpg";
+
 type Props = {};
 
 const App = (props: Props) => {
   return (
-    <div className="flex flex-col">
+    <>
+      {" "}
       <Banner />
       <Homeproducts />
       <Imagecategory />
-
       <Newproducts />
-
       <Breaker id="home" />
       {/* <Slider/> */}
       <Slid />
+      {/* <Image src={Photo} alt="" height={100} width={100} /> */}
       {/* <Checkoutkart/> */}
-    </div>
+    </>
   );
 };
 

@@ -4,7 +4,11 @@ import TitleBanner from "../componenets/titleBanner/TitleBanner";
 
 type Props = {};
 
+<<<<<<< Updated upstream
 const Cart = (props: Props) => {
+=======
+const Kart = (props: Props) => {
+>>>>>>> Stashed changes
   return (
     <>
       <TitleBanner>Kart</TitleBanner>
@@ -14,4 +18,8 @@ const Cart = (props: Props) => {
   );
 };
 
+<<<<<<< Updated upstream
 export default Cart;
+=======
+export default Kart;
+>>>>>>> Stashed changes

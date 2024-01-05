@@ -20,7 +20,7 @@ const Input = (props: Props) => {
         {label && (
         <label htmlFor={name} className={clsx('container text-[#333333] font-semibold mb-2', {})}>
           {label}
-          {isRequired && <span className="text-[#FF0000]">*</span>}
+          {isRequired && <span className="text-[#FF0000] text-2xl">*</span>}
         </label>
       )}
       <div className="relative ">

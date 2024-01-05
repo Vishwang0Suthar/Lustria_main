@@ -18,9 +18,15 @@ const TitleBanner = ({ children, ...props }: Props) => {
             <li>Small Plats</li>
             <li> &#62; </li>
             <li>{children}</li>
+<<<<<<< Updated upstream
           </ul>
         </div>
       </section>
+=======
+        </ul>
+    </div>
+    </section>
+>>>>>>> Stashed changes
     </>
   );
 };

@@ -6,7 +6,7 @@ interface CountdownProps {
   targetDate?: string; 
 }
 
-const Countdown: React.FC<CountdownProps> = ({ targetDate = '2024-01-05' }) => {
+const HCountDown: React.FC<CountdownProps> = ({ targetDate = '2024-01-05' }) => {
   const calculateTimeRemaining = () => {
     const targetTime = new Date(targetDate).getTime();
     const currentTime = new Date().getTime();
@@ -45,18 +45,20 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate = '2024-01-05' }) => {
   }, [targetDate]); 
 
   return (
-    <div className="text-center p-8  text-white">
-      <div className="flex justify-center gap-2 space-x-4">
-        <CountElement id1='comingsoon' id2='comingsoon' time='Days' >{timeRemaining.days}:</CountElement>
-        <CountElement id1='comingsoon' id2='comingsoon' time='Hours' >{timeRemaining.hours}:</CountElement>
+    <div className="flex  gap-2 ">
+        <CountElement id1='homebanner' id2='homebanner' time='Days'>{timeRemaining.days}</CountElement>
+        <span>:</span>
 
-        <CountElement id1='comingsoon' id2='comingsoon' time='Minutes' >{timeRemaining.minutes}:</CountElement>
+        <CountElement id1='homebanner' id2='homebanner' time='Hours'>{timeRemaining.hours}</CountElement>
+        <span>:</span>
+        
+        <CountElement id1='homebanner' id2='homebanner' time='Mins'>{timeRemaining.minutes}</CountElement>
+        <span>:</span>
 
-        <CountElement id1='comingsoon' id2='comingsoon' time='Seconds' >{timeRemaining.seconds}</CountElement>
+        <CountElement id1='homebanner' id2='homebanner' time='Secs'>{timeRemaining.seconds}</CountElement>
 
-      </div>
     </div>
   );
 };
 
-export default Countdown;
+export default HCountDown;

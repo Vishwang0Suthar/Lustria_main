@@ -8,19 +8,23 @@ function Shipping({}: Props) {
     <div className='container flex gap-10  flex-grow xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col w-full  '>
       <div className='flex flex-col w-full mb-10'>
         <label className='text-2xl font-semibold mb-7'>Shiping to a different address?</label>
-        <div className='flex container  gap-8 mb-4 '>
-          <Input
-          name='first name'
-          label="First Name"
-          type="text"
-          isRequired={true}
-          />
-          <Input
-          name='last name'
-          label="Last Name"
-          type="text"
-          isRequired={true}
-          />
+        <div className='flex gap-8'>
+          <div className='w-full'>
+            <Input
+              name='first name'
+              label="First Name"
+              type="text"
+              isRequired={true}
+            />
+          </div>
+          <div className='w-full'>
+            <Input
+              name='last name'
+              label="Last Name"
+              type="text"
+              isRequired={true}
+            />
+          </div>
         </div>
         <div className='container mb-4 '>
           <Input
@@ -75,7 +79,7 @@ function Shipping({}: Props) {
               {/* checkbox till here */}
         <div className='container mb-4 '>
           <label>Other Notes</label>
-          <textarea name="othernotes" className='bg-[#f5f5f5] w-full px-5 mb-4' id="" cols="55" rows="6" placeholder="Notes about your order ,eg. special notes for delivery."></textarea>
+          <textarea name="othernotes" className='bg-[#f5f5f5] w-full px-5 mb-4' id="" rows={6} placeholder="Notes about your order ,eg. special notes for delivery."></textarea>
         </div>
       </div>
     </div>

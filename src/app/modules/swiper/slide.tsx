@@ -33,7 +33,6 @@ const Slide = (props: Props) => {
         </SwiperSlide>
         <SwiperSlide>
             <Plantslide/>
-
         </SwiperSlide>
        
     

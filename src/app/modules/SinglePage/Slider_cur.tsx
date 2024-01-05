@@ -9,12 +9,13 @@ import 'swiper/css/free-mode';
 import 'swiper/css/thumbs';
 
 import Image  from 'next/image'
-import pic from '../../public/SinglePage_images/product-04.jpg'
-import pic1 from '../../public/SinglePage_images/product-04.jpg'
-import pic2 from '../../public/SinglePage_images/product-05.jpg'
-import pic3 from '../../public/SinglePage_images/product-06.jpg'
+import pic from '@/public/SinglePage_image/product-04.jpg'
+import pic1 from '@/public/SinglePage_image/product-04.jpg'
+import pic2 from '@/public/SinglePage_image/product-05.jpg'
+import pic3 from '@/public/SinglePage_image/product-06.jpg'
+import pic4 from '@/public/SinglePage_image/product-12.jpg'
 // import pic4 from '../../public/images/product-12.jpg'
-import '../SingleProf/Slider_cur.module.css'
+// import '../SingleProf/Slider_cur.module.css'
 
 
 // import required modules

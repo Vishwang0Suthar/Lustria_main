@@ -1,5 +1,6 @@
 import React from 'react'
 import Links from '../link/link'
+import About from '@/app/modules/about/page'
 
 type Props = {}
 
@@ -9,7 +10,7 @@ const Navlinks = (props: Props) => {
     <Links href="/">Home</Links>
     <Links href="/shop">Shop</Links>
     <Links href="/comingsoon">Categories</Links>
-    <Links href="/account">About</Links>
+    <Links href="/about">About</Links>
   </nav></>
   )
 }

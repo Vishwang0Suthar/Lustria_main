@@ -27,7 +27,7 @@ const Input = (props: Props) => {
         <input
           type={props.type || 'text'} 
            name={name}
-          className={clsx('transition-all duration-100 focus:outline-none focus:border focus:border-lime-700 focus:bg-white bg-[#F5F5F5] w-full h-12 px-5 ')}
+          className={clsx('transition-all duration-100 focus:outline-none focus:border focus:border-lime-700 focus:bg-white bg-[#F5F5F5] w-full h-12')}
           {...inputProps}
         />
       </div>

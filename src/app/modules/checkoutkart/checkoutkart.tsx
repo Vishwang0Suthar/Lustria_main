@@ -109,7 +109,9 @@ const Checkoutkart: React.FC = () => {
 
   return (
     <section>
-      <div className="flex flex-col  px-10">
+      <TitleBanner>Kart</TitleBanner>
+
+      <div className="flex flex-col px-10">
         <div>
           {windowWidth <= 768 && (
             <MobileTable data={data} onRemove={handleRemoveItem} />
@@ -132,9 +134,9 @@ const Checkoutkart: React.FC = () => {
         <div>
           <CouponForm />
         </div>
-        {/* <div>
-          <Cart1/>
-        </div> */}
+        <div className="mt-5">
+          <Cart1 />
+        </div>
       </div>
     </section>
   );

@@ -8,17 +8,23 @@ const BillingDetail = (props: Props) => {
     <div className='container flex gap-10  flex-grow xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col w-full  '>
         <div className='container flex flex-col '>
               <label className='text-2xl font-semibold mb-7'>Billing Details</label>
-              <div className='flex container  gap-8 mb-4 '>
+              <div className='flex gap-8'>
+              <div className='w-full'>
                 <Input
-                name='first name'
-                label="First Name"
-                type="text"
-                isRequired={true}/>
+                  name='first name'
+                  label="First Name"
+                  type="text"
+                  isRequired={true}
+                />
+              </div>
+              <div className='w-full'>
                 <Input
-                name='last name'
-                label="Last Name"
-                type="text"
-                isRequired={true}/>
+                  name='last name'
+                  label="Last Name"
+                  type="text"
+                  isRequired={true}
+                />
+              </div>
               </div>
               <div className='container mb-4 '>
                 <Input

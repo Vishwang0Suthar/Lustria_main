@@ -51,9 +51,10 @@ const About = () => {
   <h2 className="text-2xl font-bold text-center">{member.name}</h2><br />
   <div className='text-[#777777] group-hover:text-[#7fa15a]'>Full Stack Devloper</div>
   <div className="flex w-[80%] justify-evenly py-8 pt-10 opacity-0 duration-700 z-0 translate-y-10 group-hover:-translate-y-6 group-hover:opacity-100 text-3xl space-x-0">
-    <a className='transition-transform transform hover:scale-[1.3] duration-300 text-red-500' href={`https://www.instagram.com/${member.instagram}`} target="_blank" rel="noopener noreferrer"> <FaInstagram /></a>
-    <a className='transition-transform transform hover:scale-[1.3] duration-500 text-black' href={`https://github.com/${member.github}`} target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-    <a className='transition-transform transform hover:scale-[1.3] duration-700 text-blue-500' href={`https://www.linkedin.com/in/${member.linkedin}`} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+    <a className='transition-transform transform hover:scale-[1.3] duration-300 text-red-500' href={`https://www.instagram.com/${member.instagram}`} target="_blank" rel="noopener noreferrer"> <FaInstagram/></a>
+    <a className='transition-transform transform hover:scale-[1.3] duration-500 text-black' href={`https://github.com/${member.github}`} target="_blank" rel="noopener noreferrer">  <FaGithub/></a>
+
+    <a className='transition-transform transform hover:scale-[1.3] duration-700 text-blue-500' href={`https://www.linkedin.com/in/${member.linkedin}`} target="_blank" rel="noopener noreferrer">  <FaLinkedin/></a>
   </div>
 </div>
             
@@ -78,9 +79,9 @@ const About = () => {
               <div className='text-[#777777] group-hover:text-[#7fa15a]'>Full Stack Devloper</div>
 
               <div className="flex w-[80%] justify-evenly py-10 opacity-0 duration-700 z-0 translate-y-10 group-hover:-translate-y-6 group-hover:opacity-100 text-3xl space-x-0">
-                <a className='transition-transform transform hover:scale-[1.3] duration-300 text-red-500' href={`https://www.instagram.com/${member.instagram}`} target="_blank" rel="noopener noreferrer"> <FaInstagram /></a>
-                <a className='transition-transform transform hover:scale-[1.3] duration-500 text-black' href={`https://github.com/${member.github}`} target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                <a className='transition-transform transform hover:scale-[1.3] duration-700 text-blue-500' href={`https://www.linkedin.com/in/${member.linkedin}`} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                <a className='transition-transform transform hover:scale-[1.3] duration-300 text-red-500' href={`https://www.instagram.com/${member.instagram}`} target="_blank" rel="noopener noreferrer">  <FaInstagram/></a>
+                <a className='transition-transform transform hover:scale-[1.3] duration-500 text-black' href={`https://github.com/${member.github}`} target="_blank" rel="noopener noreferrer">  <FaGithub/></a>
+                <a className='transition-transform transform hover:scale-[1.3] duration-700 text-blue-500' href={`https://www.linkedin.com/in/${member.linkedin}`} target="_blank" rel="noopener noreferrer">  <FaLinkedin/></a>
               </div>
             </div>
           ))}
